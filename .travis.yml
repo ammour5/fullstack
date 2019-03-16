@@ -1,10 +1,13 @@
 language: csharp
 solution: BackApp/BackApp.sln
 mono: none
+dist: trusty
 dotent: 2.1.502
 install:
-  - dotnet tool install --global
   - dotnet restore
 script:
- - dotnet --info 
- - dotnet restore
+  - dotnet restore
+ after_success:
+  - echo dotnet test and npm test succeeded
+after_failure:
+  - echo dotnet test or npm test failed
