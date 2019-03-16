@@ -2,12 +2,12 @@ language: csharp
 solution: BackApp/BackApp.sln
 mono: none
 dist: trusty
-dotent: 2.1.502
+dotent: 2.1.4
+sudo: false
+env:
+    global:
+        - DOTNET_CLI_TELEMETRY_OPTOUT: 1
 install:
   - dotnet restore
 script:
-  - dotnet restore
-after_success:
-  - echo dotnet test and npm test succeeded
-after_failure:
-  - echo dotnet test or npm test failed
+  - dotnet build BackApp/BackApp.sln
