@@ -6,7 +6,7 @@ addons:
   apt:
     packages:
       - libunwind8
-dotent: 2.1.502
+dotent: 2.0.0
 script:
  - dotnet --info 
  - dotnet restore
