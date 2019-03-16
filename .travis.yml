@@ -3,6 +3,6 @@ solution: BackApp/BackApp.sln
 mono: none
 dist: xenial
 dotnet: 2.1
-sudo: false
-install:
+script:
   - dotnet restore
+  - dotnet build
