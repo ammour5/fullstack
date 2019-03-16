@@ -2,5 +2,8 @@ language: csharp
 solution: ./BackApp/BackApp.sln
 mono: none
 dotent: 2.1
+install:
+- dotnet restore
 script:
- - dotnet restore
+ - dotnet buil
+
