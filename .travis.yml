@@ -3,4 +3,5 @@ solution: ./BackApp/BackApp.sln
 mono: none
 dotent: 2.1.502
 script:
+ - dotnet --info 
  - dotnet restore
