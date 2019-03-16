@@ -4,8 +4,8 @@ mono: none
 addons:
   apt:
     packages:
-      - dotnet-sdk-2.1`, not `dotnet-sdk-2.1.300
-dotent: 2.1.300
+      - dotnet-sdk-2.1
+dotent: 2.1
 script:
  - dotnet --info 
  - dotnet restore
