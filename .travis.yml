@@ -7,7 +7,7 @@ install:
   - dotnet restore
 script:
   - dotnet restore
- after_success:
+after_success:
   - echo dotnet test and npm test succeeded
 after_failure:
   - echo dotnet test or npm test failed
