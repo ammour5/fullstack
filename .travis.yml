@@ -1,4 +1,4 @@
-language: sharp
+language: csharp
 solution: ./BackApp/BackApp.sln
 dotent: 2.1
 script:
